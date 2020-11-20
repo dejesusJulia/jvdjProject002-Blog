@@ -1,16 +1,19 @@
 <div class="card mx-auto my-5">
     <div class="row no-gutters">
         <div class="col-md-6">
-            <img src="" alt="place image here" class="card-img">
+            <div class="card-img">
+                <img src="" alt="place image here">
+            </div>
         </div>
 
         <div class="col-md-6">
             <div class="card-body">
                 <h5 class="card-title text-center">Login</h5>
-                <form action="" method="post" class="form" id="loginForm">
+                <form action="" method="post" class="form">
                     <div class="form-group">
                         <label for="loginEmail">Email</label>
-                        <input type="email" name="email" id="loginEmail" class="form-control">
+                        <input type="text" name="email" id="loginEmail" class="form-control">
+                        
                     </div>
 
                     <div class="form-group">

@@ -9,7 +9,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container"> 
-        <a class="navbar-brand" href="#">Tech Blog</a>
+        <a class="navbar-brand" href="/">Tech Blog</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -32,7 +32,7 @@
                     <a href="/login" class="nav-link">Login</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Register</a>
+                    <a href="/register" class="nav-link">Register</a>
                 </li>
             </ul>
         </div>
@@ -48,5 +48,20 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+<script>
+var contactBtn = document.querySelector('#contactBtn');
+
+contactBtn.addEventListener('click', validateContact);
+
+function validateContact(e){
+    var contactForm = document.querySelector('#contactForm');
+    if(contactForm.checkValidity() === false){
+        e.preventDefault();
+        e.stopPropagation();
+    }
+    contactForm.classList.add('was-validated');
+}
+</script>
+<!-- <script src="./public/js/forms.js"></script> -->
 </body>
 </html>

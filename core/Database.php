@@ -2,24 +2,38 @@
 
 namespace app\core;
 
-use app\config\Config;
 use PDO;
 
 class Database{
 
-    protected Config $config;
-    public $pdo;
+    public \PDO $pdo;
 
-    public function connect(){
-        $this->config->pdoArray();
-
-
-        $this->pdo = new PDO($this->config->pdoArr['dsn'], $this->config->pdoArr['user'], $this->config->pdoArr['password']);
+    public function __construct(array $config)
+    {
+        $dsn = $config['dsn'] ?? '';
+        $user = $config['user'] ?? '';
+        $password = $config['password'] ?? '';
+        $this->pdo = new \PDO($dsn, $user, $password);
 
         $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         $this->pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
-
+  
         return $this->pdo;
-
     }
+
+    public function applyMigrations(){
+        // code here...
+    }
+
+    public function createMigrationsTable(){
+        // code here...
+    }
+
+    public function getAppliedMigrations(){
+        // code here...
+    }
+
+
+
+
 }

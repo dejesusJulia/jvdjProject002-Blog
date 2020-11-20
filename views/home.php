@@ -7,3 +7,67 @@
         <a href="#" class="btn-btn-primary" role="button">Learn more</a>
     </div>
 </div>
+
+<div class="row my-3">
+    <div class="col-md-4">
+        <div class="card">
+            <img src="" alt="image here" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Title here</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate doloremque corrupti officia dolore dicta iure.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <img src="" alt="image here" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Title here</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate doloremque corrupti officia dolore dicta iure.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <img src="" alt="image here" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Title here</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate doloremque corrupti officia dolore dicta iure.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row my-3">
+    <div class="col-md-4">
+        <div class="card">
+            <img src="" alt="image here" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Title here</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate doloremque corrupti officia dolore dicta iure.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <img src="" alt="image here" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Title here</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate doloremque corrupti officia dolore dicta iure.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card">
+            <img src="" alt="image here" class="card-img-top">
+            <div class="card-body">
+                <h4 class="card-title">Title here</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate doloremque corrupti officia dolore dicta iure.</p>
+            </div>
+        </div>
+    </div>
+</div>
